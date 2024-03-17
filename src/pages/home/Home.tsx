@@ -1,3 +1,4 @@
+import Timer from '../../components/UI/newDate/Timer'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import styles from './Home.module.scss'
@@ -9,6 +10,7 @@ const Home: React.FC = (): JSX.Element => {
 		<>
 			<Header />
 			<section className={styles.home}>
+				<Timer />
 				<div className={styles.cards}>
 					{cardPreview.map((card: ICardPreview) => {
 						return <CardPreview key={card.id} {...card} />

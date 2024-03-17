@@ -1,0 +1,90 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+	.time {
+		font-size: 1rem;
+		color: #ccc;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 0.4rem;
+
+		svg {
+			align-self: center;
+			inline-size: 25px;
+			block-size: 25px;
+			padding: 0.3rem;
+		}
+
+		button {
+			display: block;
+			padding: 0.4rem 1rem;
+			border-radius: 1rem;
+			font-size: 0.7rem;
+			color: #cccc;
+
+			span {
+				inline-size: 40px;
+				block-size: 25px;
+			}
+		}
+	}
+	.stop {
+		svg {
+			animation: stop 1s ease-in-out infinite alternate;
+		}
+	}
+	.animation {
+		svg {
+			animation: active 1s ease-in-out infinite alternate;
+		}
+	}
+}
+
+@keyframes active {
+	0% {
+		transform: rotateZ(0);
+	}
+	10% {
+		transform: rotateZ(36deg);
+	}
+	20% {
+		transform: rotateZ(72deg);
+	}
+	30% {
+		transform: rotateZ(108deg);
+	}
+	40% {
+		transform: rotateZ(144deg);
+	}
+	50% {
+		transform: rotateZ(180deg);
+	}
+	60% {
+		transform: rotateZ(216deg);
+	}
+	70% {
+		transform: rotateZ(252deg);
+	}
+	80% {
+		transform: rotateZ(288deg);
+	}
+	90% {
+		transform: rotateZ(324deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes stop {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-30px, 10px);
+	}
+}
