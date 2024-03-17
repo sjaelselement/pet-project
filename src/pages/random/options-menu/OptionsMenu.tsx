@@ -11,6 +11,7 @@ const OptionsMenu: React.FC = (): JSX.Element => {
 				хочу комплиментов
 			</button>
 			<button onClick={() => navigate('/random/facts')}>хочу факты</button>
+			<button onClick={() => navigate('/random/xo')}>хочу поиграть</button>
 		</div>
 	)
 }

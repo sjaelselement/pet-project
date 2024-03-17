@@ -5,6 +5,7 @@ import OptionsMenu from './options-menu/OptionsMenu'
 import styles from './Random.module.scss'
 import Facts from './cards-random/facts/Facts'
 import Compliment from './cards-random/compliment/Compliment'
+import GameXO from './GameXO/GameXO'
 
 const Random: React.FC = (): JSX.Element => {
 	const location = useLocation()
@@ -26,6 +27,7 @@ const Random: React.FC = (): JSX.Element => {
 				{location.pathname === '/random/generate-compliment' ? (
 					<Compliment />
 				) : null}
+				{location.pathname === '/random/xo' ? <GameXO /> : null}
 				<p>
 					Истинная кулинария не для робких, наберитесь отваги! Пробуйте,
 					экспериментируйте... Не позволяйте никому загонять вас в рамки.

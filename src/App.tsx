@@ -19,6 +19,7 @@ function App() {
 					<Route path='/random' element={<Random />} />
 					<Route path='/random/generate-compliment' element={<Random />} />
 					<Route path='/random/facts' element={<Random />} />
+					<Route path='/random/xo' element={<Random />} />
 				</Route>
 				<Route path='/login' element={<Auth />} />
 				<Route path='/register' element={<Auth />} />

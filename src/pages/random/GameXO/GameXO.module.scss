@@ -1,0 +1,129 @@
+.wrapper {
+	display: block;
+
+	.board {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.3rem;
+
+		h3 {
+			font-size: 1rem;
+			font-weight: 700;
+		}
+
+		.exit {
+			align-self: end;
+			padding: 0;
+			margin: 0;
+			background-color: transparent;
+			border: none;
+			box-shadow: 0 0 0 transparent;
+
+			&:hover {
+				background-color: transparent;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			svg {
+				color: #ccc;
+				transition: color 0.4s ease-in-out;
+
+				&:hover {
+					color: #939393;
+				}
+			}
+		}
+
+		p {
+			font-size: 0.8rem;
+			color: #5567ba;
+			font-weight: 500;
+			font-size: 0.8rem;
+			margin: 0;
+		}
+
+		.text {
+			color: #6fff00;
+			animation: text-shadow 1s ease-in-out alternate infinite;
+		}
+		button {
+			border-radius: 0.7rem;
+			padding: 0.3rem 1.5rem;
+			color: #ccc;
+		}
+
+		.active {
+			color: #6fff00;
+			animation: box-shadow 1s ease-in-out alternate infinite;
+		}
+
+		.row {
+			display: flex;
+
+			.block {
+				padding: 0.3rem;
+				box-shadow: 1px 1px 2px #ccc;
+				margin: 0.4rem;
+				inline-size: 1.5rem;
+				block-size: 1.5rem;
+				transition: box-shadow 0.4s ease-in-out;
+
+				.cellX {
+					color: #002fff;
+					border: none;
+					box-shadow: 0 0 0 transparent;
+					inline-size: 100%;
+					padding: 0;
+					margin: 0;
+					block-size: 100%;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+
+				&:hover {
+					box-shadow: 3px 3px 5px #c8d2ff;
+				}
+
+				.cellO {
+					color: #ff0000;
+					border: none;
+					box-shadow: 0 0 0 transparent;
+					inline-size: 100%;
+					padding: 0;
+					margin: 0;
+					block-size: 100%;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+
+				&:hover {
+					box-shadow: 3px 3px 5px #c8d2ff;
+				}
+			}
+		}
+	}
+}
+
+@keyframes text-shadow {
+	to {
+		text-shadow: 0 0 0 #6fff00;
+	}
+	from {
+		text-shadow: 1px 1px 3px #6fff00;
+	}
+}
+@keyframes box-shadow {
+	to {
+		box-shadow: 0 0 0 #b2ff78;
+	}
+	from {
+		box-shadow: 2px 2px 10px #b2ff78;
+	}
+}
