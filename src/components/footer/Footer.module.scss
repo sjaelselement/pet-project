@@ -1,0 +1,16 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 10px #ccc;
+	inline-size: 100%;
+	margin-block-start: 2rem;
+
+	p {
+		max-inline-size: 850px;
+		padding: 0.9rem 0.8rem;
+		color: rgb(140, 140, 140);
+		border-inline-start: 1px solid #cccc;
+	}
+}

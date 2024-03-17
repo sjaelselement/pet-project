@@ -1,0 +1,21 @@
+.auth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	inline-size: 100vw;
+	block-size: 100vh;
+
+	.form {
+		.box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-inline-size: 640px;
+			margin: auto;
+			padding: 1rem 3rem;
+			border-radius: 0.5rem;
+			box-shadow: 5px 5px 10px #ccc;
+		}
+	}
+}

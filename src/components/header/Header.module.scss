@@ -1,0 +1,59 @@
+.header {
+	display: flex;
+	justify-content: center;
+	// gap: 4rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 10px #ccc;
+	inline-size: 100%;
+	margin-block-end: 2rem;
+
+	.nav {
+		display: flex;
+		gap: 2rem;
+		padding-inline: 6rem 3rem;
+
+		button {
+			border: none;
+			border-radius: 0.5rem;
+			max-block-size: 50px;
+			padding: 0.2rem 0.8rem;
+			color: rgb(140, 140, 140);
+
+			&:disabled {
+				box-shadow: 5px 5px 10px #d8d8d8;
+				color: rgb(202, 202, 202);
+			}
+		}
+	}
+
+	.logout {
+		border: none;
+		border-radius: 0.5rem;
+		margin-inline-start: 8rem;
+		justify-self: end;
+		margin-block: auto;
+		max-inline-size: 50px;
+		max-block-size: 50px;
+		padding: 0.5rem;
+		background-color: transparent;
+		box-shadow: 0 0 0 transparent;
+
+		&:hover {
+			background-color: transparent;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		svg {
+			color: #ccc;
+			transition: color 0.4s ease-in-out;
+
+			&:hover {
+				color: #939393;
+			}
+		}
+	}
+}
