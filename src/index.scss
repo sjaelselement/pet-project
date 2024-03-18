@@ -25,6 +25,15 @@ body {
 	}
 }
 
+a {
+	text-decoration: none;
+	color: #899fff;
+	transition: color 0.4s ease-in-out;
+
+	&:hover {
+		color: #002fff;
+	}
+}
 span {
 	font-family: inherit;
 	cursor: pointer;
