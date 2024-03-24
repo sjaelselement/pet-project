@@ -35,6 +35,7 @@ const Board: React.FC = () => {
 	const handleUpdate = () => {
 		setSquares(Array(9).fill(null))
 		setValueXNext(Math.random() < 0.5)
+		setWinner(null)
 	}
 
 	const checkWinner = (squares: SquareValue[]) => {
